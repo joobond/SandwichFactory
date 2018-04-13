@@ -6,6 +6,8 @@
 package lanchonete.factory;
 
 import java.util.Scanner;
+import lanchonete.factory.Snackbar.Snackbar;
+import lanchonete.factory.Snackbar.SnackbarCG;
 
 /**
  *
@@ -18,7 +20,7 @@ public class Test {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Makeable san = new SandwichFactory().mount(sc.next());
+        Makeable san = new SnackbarCG().createSandwich();
         san.prepare();
         System.out.println(san);
     }

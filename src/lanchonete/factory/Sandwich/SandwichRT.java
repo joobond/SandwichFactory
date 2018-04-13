@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lanchonete.factory;
+package lanchonete.factory.Sandwich;
 
 /**
  *
  * @author Bond
  */
-public class SandwichJP extends Sandwich{
-    
+public class SandwichRT extends Sandwich{
+   
     @Override
     public void prepare() {
-        this.bread = "French Bread";
-        this.cheese = "Mozzarella Cheese";
-        this.ham = "Chicken Ham";
+        this.bread = "Bread Ball";
+        this.cheese = "Cheddar Cheese";
+        this.ham = "Turkey Ham";
         this.salad = !true;  
     }
-    
+
     @Override
     public String getType() {
-        return "JP";
+        return "RT";
     }
 }
